@@ -26,10 +26,10 @@ import React from 'react'
 //     }
 // }
 
-export default function NinjaDetails({ ninja }) {
+export default function NinjaDetails() {
     return (
         <div>
-            <h3>{ninja.name}</h3>
+            <h3>Ninja Details</h3>
         </div>
     )
 }
