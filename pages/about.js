@@ -1,10 +1,16 @@
 import React from 'react'
+import Head from 'next/head'
 
 function About() {
     return (
-        <div>
-            <h1>About page</h1>
-        </div>
+        <>
+            <Head>
+                <title>Bookabie | About</title>
+            </Head>
+            <div>
+                <h1>About page</h1>
+            </div>
+        </>
     )
 }
 

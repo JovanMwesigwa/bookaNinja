@@ -1,10 +1,16 @@
 import React from 'react'
+import Head from 'next/head'
 
 function NinjaList() {
     return (
-        <div>
-            <h1>Ninja Listing</h1>
-        </div>
+        <>
+            <Head>
+                <title>Bookabie | Ninja list</title>
+            </Head>
+            <div>
+                <h1>Ninja Listing</h1>
+            </div>
+        </>
     )
 }
 
