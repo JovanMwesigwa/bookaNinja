@@ -1,5 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
+import Link from 'next/link'
 import styles from '../../styles/Ninjas.module.css'
 
 export const getStaticProps = async() => {
@@ -21,9 +22,11 @@ function NinjaList({ ninjas }) {
                 <h1>Ninja Listing</h1>
                 {
                     ninjas.map(ninja => (
-                        <div key={ninja.id} className={styles.single}>
-                            <h3>{ ninja.name }</h3>
-                        </div>
+                        <Link href={`/ninjas/${ninja.id}`} key={ninja.id} >
+                            <div className={styles.single}>
+                                <h3 >{ ninja.name }</h3>
+                            </div>
+                        </Link>
                     ))
                 }
             </div>
