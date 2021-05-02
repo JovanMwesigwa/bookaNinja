@@ -1,16 +1,17 @@
 import React from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
 
-export default function Navbar() {
+function Navbar() {
     return (
-        <nav >
-            <div className="logo">
-                <Image src="/logo.png" width={77} height={77} />
+        <nav>
+            <div className='logo'>
+                <h1>Bookabie</h1>
             </div>
-            <Link href="/"><a>Home</a></Link>
-            <Link href="/about"><a>About</a></Link>
-            <Link href="/ninjas"><a>NinjaListing</a></Link>
+            <Link href='/'><a>Home</a></Link>
+            <Link href='/about'><a>About</a></Link>
+            <Link href='/ninjas'><a>Ninjas</a></Link>
         </nav>
     )
 }
+
+export default Navbar

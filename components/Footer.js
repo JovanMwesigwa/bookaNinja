@@ -1,9 +1,11 @@
 import React from 'react'
 
-export default function Footer() {
+function Footer() {
     return (
         <footer>
-            <p>Copyrity 2021 Ninja list </p>
+            Copyright 2021
         </footer>
     )
 }
+
+export default Footer

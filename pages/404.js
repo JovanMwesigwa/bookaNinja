@@ -1,20 +1,22 @@
-import React, { useEffect } from 'react'
 import Link from 'next/link'
+import React, { useEffect } from 'react'
 import { useRouter } from 'next/router'
 
-export default function NotFound() {
 
-    const router = useRouter();
+function NotFound() {
+    const route  = useRouter()
 
     useEffect(() => {
         setTimeout(() => {
-            router.push('/')
+            route.push('/')
         },3000)
     },[])
     return (
-        <div>
-            <h1>Page not Found</h1>
-            <p>Go back <Link href='/'><a>Home</a></Link> safely.</p>
+        <div className='not-found'>
+            <h1>OOps, That page does not exist</h1>
+            <p>Go bac to the <Link href='/'><a>Home Page</a></Link></p>
         </div>
     )
 }
+
+export default NotFound

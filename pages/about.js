@@ -1,15 +1,11 @@
-import Head from 'next/head'
 import React from 'react'
 
-export default function about() {
+function About() {
     return (
-        <>
-        <Head>
-            <title>NinjaList | About</title>
-        </Head>
-            <div>
-                <h1>About page</h1>
-            </div>
-        </>
+        <div>
+            <h1>About page</h1>
+        </div>
     )
 }
+
+export default About

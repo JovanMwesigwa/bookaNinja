@@ -1,23 +1,19 @@
-import Head from 'next/head'
-import Link from 'next/link'
-import Footer from '../components/Footer'
-import Navbar from '../components/Navbar'
+import Link from "next/link";
 import styles from '../styles/Home.module.css'
+
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>NinjaList | Home</title>
-      </Head>
       <div>
-          <h1 className={styles.title}>Next Js</h1>
-          <p className={styles.text}>This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
-  Use equal casing. Compare these module identifiers:
-  * E:\Devstuff\NUXTJS\ninjalist\node_modules\next\dist\build\webpack\loaders\next-client-pages-loader.js?page=%2FNinjas&absolutePagePath=E%3A%5CDevstuff%5CNUXTJS%5Cninjalist%5Cpages%5CNinjas%5Cindex.js!
-  * E:\Devstuff\NUXTJS\ninjalist\node_modules\next\dist\build\webpack\loaders\next-client-pages-loader.js?page=%2Fninjas&absolutePagePath=E%3A%5CDevstuff%5CNUXTJS%5Cninjalist%5Cpages%5Cninjas%5Cindex.js!</p>
-  <Link href="/ninjas" ><a className={styles.btn}>View ALl Ninjas</a></Link>
+        <h1 className={styles.title}>Home page</h1>
+        <p className={styles.text}>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book</p>
+        <p className={styles.text}>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book</p>
+        <p className={styles.text}>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book</p>
+        <Link href='/ninjas'>
+          <a className={styles.btn}>See Ninjas</a>
+        </Link>
       </div>
-    </>
+   </>
   )
 }
